@@ -1,5 +1,7 @@
 # README.md
 
+app link : https://ahbiswasloanaproval.streamlit.app/
+
 ## Project overview
 
 This repo is a single Jupyter notebook (`LoanDefaultProbability.ipynb`) that builds a binary classifier predicting whether a LendingClub loan will charge off (default) vs. be fully paid. There is no application code, package, or test suite — all logic lives in the notebook's cells, executed top to bottom.
