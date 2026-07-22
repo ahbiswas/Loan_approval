@@ -182,12 +182,6 @@ with st.form("loan_form"):
             help="Number of currently active revolving trade lines (credit cards, lines of credit, etc.).",
         )
 
-    last_pymnt_amnt = st.number_input(
-        "Last payment amount ($)", min_value=0.0, max_value=40000.0, value=0.0, step=50.0,
-        help="Amount of the borrower's most recent payment on this loan. "
-        "Leave at 0 for a loan that has not yet made a payment.",
-    )
-
     submitted = st.form_submit_button("Predict")
 
 if submitted:
@@ -208,7 +202,6 @@ if submitted:
         "open_acc": open_acc,
         "revol_util": revol_util,
         "initial_list_status": initial_list_status,
-        "last_pymnt_amnt": last_pymnt_amnt,
         "application_type": application_type,
         "acc_open_past_24mths": acc_open_past_24mths,
         "avg_cur_bal": avg_cur_bal,
